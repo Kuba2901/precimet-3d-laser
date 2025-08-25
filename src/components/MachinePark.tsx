@@ -6,6 +6,7 @@ import {
   Zap as Welding, 
   ArrowRight 
 } from 'lucide-react'
+import Image from 'next/image'
 
 export default function MachinePark() {
   const machines = [
@@ -13,61 +14,61 @@ export default function MachinePark() {
       icon: Zap,
       title: 'Wycinarka laserowa MAZAK Fiber',
       description: 'Nowoczesna wycinarka laserowa do precyzyjnego cięcia blach',
-      image: '/images/mazak-laser.jpg'
+      image: 'mazak-fiber-laser.jpg'
     },
     {
       icon: Settings,
       title: 'Prasa serwomechaniczna SAFAN DARLEY',
       description: 'Zaawansowana prasa do gięcia blach z kontrolą serwomechaniczną',
-      image: '/images/safan-press.jpg'
+      image: 'safan-darley-press.jpg'
     },
     {
       icon: Cog,
       title: 'Pionowe centrum obróbcze DOOSAN',
       description: 'Wysokiej jakości centrum obróbcze do frezowania pionowego',
-      image: '/images/doosan-vertical.jpg'
+      image: 'doosan-vertical-machining.jpg'
     },
     {
       icon: Cog,
       title: 'Poziome centrum obróbcze DOOSAN',
       description: 'Precyzyjne centrum obróbcze do frezowania poziomego',
-      image: '/images/doosan-horizontal.jpg'
+      image: 'doosan-horizontal-machining.jpg'
     },
     {
       icon: Cog,
       title: 'Pionowe centrum obróbcze AVIA',
       description: 'Zaawansowane centrum obróbcze do obróbki skrawaniem',
-      image: '/images/avia-machining.jpg'
+      image: 'avia-machining-center.jpg'
     },
     {
       icon: Wrench,
       title: 'Numeryczna przecinarka z automatycznym ukosowaniem',
       description: 'Automatyczna przecinarka z funkcją ukosowania krawędzi',
-      image: '/images/cutting-machine.jpg'
+      image: 'cutting-machine-ukosowanie.jpg'
     },
     {
       icon: Wrench,
       title: 'Numeryczna giętarka rur i profili',
       description: 'Precyzyjna giętarka do rur i profili metalowych',
-      image: '/images/tube-bender.jpg'
+      image: 'tube-profile-bender.jpg'
     },
     {
       icon: Welding,
       title: 'Robot spawalniczy OTC Daihen',
       description: 'Zaawansowany robot spawalniczy do automatyzacji procesów',
-      image: '/images/otc-robot.jpg'
+      image: 'otc-daihen-welding-robot.jpg'
     },
     {
       icon: Zap,
       title: 'Wycinarka laserowa z obrotową głowicą Prima Industrie',
       description: 'Wycinarka laserowa z obrotową głowicą do cięć 3D',
-      image: '/images/prima-laser.jpg'
+      image: 'prima-laser-3d.jpg'
     },
     {
       icon: Cog,
       title: 'Poziome centrum obróbcze ROMI',
       description: 'Profesjonalne centrum obróbcze do obróbki skrawaniem',
-      image: '/images/romi-machining.jpg'
+      image: 'romi-machining-center.jpg'
     }
   ]
 
@@ -89,11 +90,14 @@ export default function MachinePark() {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 hover:border-primary-300 overflow-hidden"
             >
-              <div className="mb-4 h-48 bg-gray-200 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <machine.icon className="h-16 w-16 text-primary-400 mx-auto mb-2" />
-                  <p className="text-gray-500 text-sm">Zdjęcie maszyny</p>
-                </div>
+              <div className="mb-4 h-48 bg-gray-200 rounded-lg overflow-hidden relative">
+                <Image
+                  src={`/images/${machine.image}`}
+                  alt={machine.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
               
               <div className="flex items-center mb-4">
