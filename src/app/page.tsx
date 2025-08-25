@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import WhyChooseUs from '@/components/WhyChooseUs'
+import AboutUs from '@/components/AboutUs'
 import Clients from '@/components/Clients'
 import MachinePark from '@/components/MachinePark'
 import Contact from '@/components/Contact'
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Services />
       <WhyChooseUs />
+      <AboutUs />
       <Clients />
       <MachinePark />
       <Contact />

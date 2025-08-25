@@ -52,7 +52,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-primary-600 mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Adres</p>
                     <p className="text-gray-600">ul. Pomorska 555</p>
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <Building className="h-5 w-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                  <Building className="h-5 w-5 text-primary-600 mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">NIP</p>
                     <p className="text-gray-600">728-280-49-18</p>
@@ -69,7 +69,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <Phone className="h-5 w-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                  <Phone className="h-5 w-5 text-primary-600 mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Telefon</p>
                     <p className="text-gray-600">+48 (42) XXX XX XX</p>
@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <Mail className="h-5 w-5 text-blue-600 mt-1 mr-3 flex-shrink-0" />
+                  <Mail className="h-5 w-5 text-primary-600 mt-1 mr-3 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
                     <p className="text-gray-600">biuro@precimet.pl</p>
@@ -114,7 +114,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="Wprowadź imię i nazwisko"
                   />
                 </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="Wprowadź adres email"
                   />
                 </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                     placeholder="Wprowadź nazwę firmy"
                   />
                 </div>
@@ -161,14 +161,14 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200 resize-none"
                     placeholder="Opisz swoje potrzeby produkcyjne..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                 >
                   <Send className="h-5 w-5" />
                   Wyślij wiadomość

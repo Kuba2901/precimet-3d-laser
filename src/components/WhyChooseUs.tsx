@@ -49,8 +49,8 @@ export default function WhyChooseUs() {
               className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200"
             >
               <div className="flex items-start mb-6">
-                <div className="p-3 bg-blue-100 rounded-lg flex-shrink-0">
-                  <reason.icon className="h-8 w-8 text-blue-600" />
+                <div className="p-3 bg-primary-100 rounded-lg flex-shrink-0">
+                  <reason.icon className="h-8 w-8 text-primary-600" />
                 </div>
                 <div className="ml-4">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -65,11 +65,11 @@ export default function WhyChooseUs() {
           ))}
         </div>
 
-        <div className="bg-blue-600 text-white p-8 rounded-lg text-center">
+        <div className="bg-primary-600 text-white p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">
             Obsługujemy zlecenia z całego terenu RP
           </h3>
-          <p className="text-blue-100 text-lg mb-6">
+          <p className="text-primary-100 text-lg mb-6">
             Nasz wykfalifikowany zespół jest gotowy do realizacji projektów 
             w każdym zakątku Polski
           </p>

@@ -63,11 +63,11 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-200 border border-gray-200 hover:border-blue-300"
+              className="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-all duration-200 border border-gray-200 hover:border-primary-300"
             >
               <div className="flex items-center mb-4">
-                <div className="p-3 bg-blue-100 rounded-lg">
-                  <service.icon className="h-6 w-6 text-blue-600" />
+                <div className="p-3 bg-primary-100 rounded-lg">
+                  <service.icon className="h-6 w-6 text-primary-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 ml-3">
                   {service.title}
@@ -80,9 +80,9 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="bg-blue-50 p-8 rounded-lg text-center">
+        <div className="bg-primary-50 p-8 rounded-lg text-center">
           <div className="flex items-center justify-center mb-4">
-            <Award className="h-8 w-8 text-blue-600 mr-3" />
+            <Award className="h-8 w-8 text-primary-600 mr-3" />
             <h3 className="text-xl font-semibold text-gray-900">
               Certyfikowany system zarządzania jakością
             </h3>
@@ -93,7 +93,7 @@ export default function Services() {
           </p>
           <a
             href="#kontakt"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
+            className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200"
           >
             Dowiedz się więcej
             <ArrowRight className="h-4 w-4 ml-2" />

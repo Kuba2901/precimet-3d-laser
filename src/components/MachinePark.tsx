@@ -12,52 +12,62 @@ export default function MachinePark() {
     {
       icon: Zap,
       title: 'Wycinarka laserowa MAZAK Fiber',
-      description: 'Nowoczesna wycinarka laserowa do precyzyjnego cięcia blach'
+      description: 'Nowoczesna wycinarka laserowa do precyzyjnego cięcia blach',
+      image: '/images/mazak-laser.jpg'
     },
     {
       icon: Settings,
       title: 'Prasa serwomechaniczna SAFAN DARLEY',
-      description: 'Zaawansowana prasa do gięcia blach z kontrolą serwomechaniczną'
+      description: 'Zaawansowana prasa do gięcia blach z kontrolą serwomechaniczną',
+      image: '/images/safan-press.jpg'
     },
     {
       icon: Cog,
       title: 'Pionowe centrum obróbcze DOOSAN',
-      description: 'Wysokiej jakości centrum obróbcze do frezowania pionowego'
+      description: 'Wysokiej jakości centrum obróbcze do frezowania pionowego',
+      image: '/images/doosan-vertical.jpg'
     },
     {
       icon: Cog,
       title: 'Poziome centrum obróbcze DOOSAN',
-      description: 'Precyzyjne centrum obróbcze do frezowania poziomego'
+      description: 'Precyzyjne centrum obróbcze do frezowania poziomego',
+      image: '/images/doosan-horizontal.jpg'
     },
     {
       icon: Cog,
       title: 'Pionowe centrum obróbcze AVIA',
-      description: 'Zaawansowane centrum obróbcze do obróbki skrawaniem'
+      description: 'Zaawansowane centrum obróbcze do obróbki skrawaniem',
+      image: '/images/avia-machining.jpg'
     },
     {
       icon: Wrench,
       title: 'Numeryczna przecinarka z automatycznym ukosowaniem',
-      description: 'Automatyczna przecinarka z funkcją ukosowania krawędzi'
+      description: 'Automatyczna przecinarka z funkcją ukosowania krawędzi',
+      image: '/images/cutting-machine.jpg'
     },
     {
       icon: Wrench,
       title: 'Numeryczna giętarka rur i profili',
-      description: 'Precyzyjna giętarka do rur i profili metalowych'
+      description: 'Precyzyjna giętarka do rur i profili metalowych',
+      image: '/images/tube-bender.jpg'
     },
     {
       icon: Welding,
       title: 'Robot spawalniczy OTC Daihen',
-      description: 'Zaawansowany robot spawalniczy do automatyzacji procesów'
+      description: 'Zaawansowany robot spawalniczy do automatyzacji procesów',
+      image: '/images/otc-robot.jpg'
     },
     {
       icon: Zap,
       title: 'Wycinarka laserowa z obrotową głowicą Prima Industrie',
-      description: 'Wycinarka laserowa z obrotową głowicą do cięć 3D'
+      description: 'Wycinarka laserowa z obrotową głowicą do cięć 3D',
+      image: '/images/prima-laser.jpg'
     },
     {
       icon: Cog,
       title: 'Poziome centrum obróbcze ROMI',
-      description: 'Profesjonalne centrum obróbcze do obróbki skrawaniem'
+      description: 'Profesjonalne centrum obróbcze do obróbki skrawaniem',
+      image: '/images/romi-machining.jpg'
     }
   ]
 
@@ -77,11 +87,18 @@ export default function MachinePark() {
           {machines.map((machine, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 hover:border-blue-300"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border border-gray-200 hover:border-primary-300 overflow-hidden"
             >
+              <div className="mb-4 h-48 bg-gray-200 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <machine.icon className="h-16 w-16 text-primary-400 mx-auto mb-2" />
+                  <p className="text-gray-500 text-sm">Zdjęcie maszyny</p>
+                </div>
+              </div>
+              
               <div className="flex items-center mb-4">
-                <div className="p-3 bg-blue-100 rounded-lg">
-                  <machine.icon className="h-6 w-6 text-blue-600" />
+                <div className="p-3 bg-primary-100 rounded-lg">
+                  <machine.icon className="h-6 w-6 text-primary-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 ml-3">
                   {machine.title}
@@ -94,17 +111,17 @@ export default function MachinePark() {
           ))}
         </div>
 
-        <div className="bg-blue-600 text-white p-8 rounded-lg text-center">
+        <div className="bg-primary-600 text-white p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">
             Nowoczesne technologie w Twojej dyspozycji
           </h3>
-          <p className="text-blue-100 text-lg mb-6">
+          <p className="text-primary-100 text-lg mb-6">
             Nasz park maszynowy jest stale modernizowany, aby zapewnić 
             najwyższą jakość i wydajność produkcji
           </p>
           <a
             href="#kontakt"
-            className="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+            className="inline-flex items-center bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
           >
             Zapytaj o ofertę
             <ArrowRight className="h-5 w-5 ml-2" />

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">
+            <h3 className="text-2xl font-bold text-primary-400 mb-4">
               PRECIMET H.C.E.
             </h3>
             <p className="text-gray-300 mb-4 max-w-md">
@@ -19,21 +19,21 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
                 href="mailto:biuro@precimet.pl"
-                className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                 aria-label="Email"
               >
                 <Mail className="h-6 w-6" />
@@ -46,22 +46,22 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Menu</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors duration-200">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#oferta" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="#oferta" className="text-gray-300 hover:text-primary-400 transition-colors duration-200">
                   Nasza oferta
                 </a>
               </li>
               <li>
-                <a href="#o-nas" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="#o-nas" className="text-gray-300 hover:text-primary-400 transition-colors duration-200">
                   O nas
                 </a>
               </li>
               <li>
-                <a href="#kontakt" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="#kontakt" className="text-gray-300 hover:text-primary-400 transition-colors duration-200">
                   Kontakt
                 </a>
               </li>
@@ -86,10 +86,10 @@ export default function Footer() {
               © {currentYear} by PRECIMET H.C.E. Sp. z o.o. Wszystkie prawa zastrzeżone.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="#" className="hover:text-primary-400 transition-colors duration-200">
                 RODO
               </a>
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="#" className="hover:text-primary-400 transition-colors duration-200">
                 OWS
               </a>
             </div>

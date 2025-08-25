@@ -1,13 +1,13 @@
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Factory, Users, Award } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+    <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Od 15 lat dostarczamy naszym Klientom{' '}
-            <span className="text-blue-600">swoje usługi</span>
+            <span className="text-primary-600">swoje usługi</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
@@ -15,7 +15,10 @@ export default function Hero() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+              <div className="flex items-center justify-center mb-3">
+                <Factory className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Współpraca R&D
               </h3>
@@ -24,7 +27,10 @@ export default function Hero() {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+              <div className="flex items-center justify-center mb-3">
+                <Award className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Szybkie prototypowanie
               </h3>
@@ -33,7 +39,10 @@ export default function Hero() {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+              <div className="flex items-center justify-center mb-3">
+                <Users className="h-8 w-8 text-primary-600" />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Profesjonalne usługi
               </h3>
@@ -43,19 +52,19 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <a
               href="#kontakt"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center gap-2"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl"
             >
               Skontaktuj się z nami!
               <ArrowRight className="h-5 w-5" />
             </a>
           </div>
 
-          <div className="mt-16 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">
+              <div className="text-4xl font-bold text-primary-600 mb-2">
                 3.5M+
               </div>
               <p className="text-gray-600">
@@ -64,7 +73,7 @@ export default function Hero() {
             </div>
             
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">
+              <div className="text-4xl font-bold text-primary-600 mb-2">
                 50+
               </div>
               <p className="text-gray-600">
